@@ -1038,7 +1038,7 @@ window.delTopico=async function(i){
   const topicos=await getTopicos(); topicos.splice(i,1);
   await saveTopicos(topicos); renderAdmTopicos(); renderTopicosPublic(topicos);
 };
-
+ 
 window.moveTopico=async function(i,dir){
   const topicos=await getTopicos();
   const j=i+dir; if(j<0||j>=topicos.length)return;
